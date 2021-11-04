@@ -4,7 +4,7 @@
     "start-local": "webpack-dev-server --env.local --progress --hot --open",
     "format": "prettier --write \"src/**/*.js\"",
     "build": "webpack -p",
-    "deploy": "gh-pages -d dist"
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^16.3.0",

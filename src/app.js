@@ -12,7 +12,7 @@ import ControlPanel from "./control-panel";
 import Pin from "./pin";
 
 const TOKEN =
-  "pk.eyJ1IjoidGltbWNjYXVsZXkiLCJhIjoiY2t2bGg4cnhvMTY1ajJ2dGt4YnR0MmJ0dCJ9.GB_amEaSnrJhteyODzSiaQ";
+  "pk.eyJ1IjoidGltbWNjYXVsZXkiLCJhIjoiY2t2Zm45bGoyMXVhYTJwcGdxYjlndmRsMyJ9.Yi9qMPkTXfFsUvR8xz1QrA";
 
 const styles = `
   @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
