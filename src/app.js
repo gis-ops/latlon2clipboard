@@ -15,7 +15,7 @@ const TOKEN =
   "pk.eyJ1IjoidGltbWNjYXVsZXkiLCJhIjoiY2t2Zm45bGoyMXVhYTJwcGdxYjlndmRsMyJ9.Yi9qMPkTXfFsUvR8xz1QrA";
 
 const styles = `
-  @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
   @import url(https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css);
   @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
