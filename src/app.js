@@ -11,11 +11,8 @@ import Geocoder from "react-mapbox-gl-geocoder";
 import ControlPanel from "./control-panel";
 import Pin from "./pin";
 
-
 const TOKEN =
-  "pk.eyJ1IjoidGltbWNjYXVsZXkiLCJhIjoiY2t2Zm45bGoyMXVhYTJwcGdxYjlndmRsMyJ9.Yi9qMPkTXfFsUvR8xz1QrA";
-
-
+  "pk.eyJ1IjoidGltbWNjYXVsZXkiLCJhIjoiY2t2bGg4cnhvMTY1ajJ2dGt4YnR0MmJ0dCJ9.GB_amEaSnrJhteyODzSiaQ";
 
 const styles = `
   @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
@@ -176,34 +173,16 @@ function Root() {
       </MapGL>
       <ControlPanel events={events} />
       <Geocoder
-        style={{
-          position: 'absolute',
-          maxWidth: '300px',
-          background: '#fff',
-          boxShadow: '0 0 0 2px rgb(0 0 0 / 10%)',
-          borderRadius: '4px',
-          padding: '4px 4px',
-          fontSize: '13px',
-          color: '#6b6b76',
-          width: '300px',
-          left: '50px',
-          top: '10px'
-        }}
         mapboxApiAccessToken={TOKEN}
         onSelected={onSelected}
         updateInputOnSelect={true}
         limit={15}
         viewport={viewport}
-        hideOnSelect={true}
-        initialInputValue={"Search for an address..."}
+        hideOnSelect={true} 
       />
     </>
   );
 }
-
-// export function renderToDom(container) {
-//   render(<App />, container);
-// }
 
 const styleSheet = document.createElement("style")
 styleSheet.type = "text/css"
@@ -211,3 +190,6 @@ styleSheet.innerText = styles
 document.head.appendChild(styleSheet)
 document.body.style.margin = 0;
 render(<Root />, document.body.appendChild(document.createElement('div')));
+const input = document.getElementsByClassName('react-geocoder')[0].querySelector('input');
+input.setAttribute("placeholder", "Enter an address...");
+
