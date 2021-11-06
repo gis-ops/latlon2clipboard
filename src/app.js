@@ -188,6 +188,14 @@ const styleSheet = document.createElement("style")
 styleSheet.type = "text/css"
 styleSheet.innerText = styles
 document.head.appendChild(styleSheet)
+
+
+const faviconLink = document.createElement("link")
+faviconLink.rel = "icon"
+faviconLink.href = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' stroke='black' stroke-width='3' fill='rgb(23, 162, 184)'/></svg>"
+
+document.head.appendChild(faviconLink)
+
 document.body.style.margin = 0;
 render(<Root />, document.body.appendChild(document.createElement('div')));
 const input = document.getElementsByClassName('react-geocoder')[0].querySelector('input');
