@@ -140,7 +140,7 @@ function Root() {
       zoom: 13,
     });
 
-    logEvents((_events) => ({ ..._events, onDragEnd: coords }));
+    logEvents((_events) => ({ ..._events, onDrag: coords }));
     setMarker({
       longitude: coords[0],
       latitude: coords[1],
